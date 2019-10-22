@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>css3文字颜色更改</title>
+</head>
+<style>
+.site__title {
+	color: #f35626;
+	font-family: 微软雅黑;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+@-webkit-keyframes hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+		-moz-filter: hue-rotate(0deg);
+	}
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+		-moz-filter: hue-rotate(-360deg);
+	}
+}
+</style>
+<body>
+
+<h1 class="site__title">色彩会自动变哈</h1>
+</body>
+</html>
